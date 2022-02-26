@@ -4,12 +4,10 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    float A;
-    float B;
+    string A;
 
     cin >> A;
-    cin >> B;
+    cout << A +"??!" << endl;
 
-    printf("%f", A / B);
     return 0;
 }
