@@ -13,6 +13,12 @@ int main(int argc, char const *argv[])
     h = time / 60;
     m = time % 60;
 
+    if (time < 0)
+    {
+        time = (24 * 60) + time;
+        h = time / 60;
+        m = time % 60;
+    }
     printf("%d %d", h, m);
 
     return 0;
